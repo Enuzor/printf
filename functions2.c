@@ -12,7 +12,7 @@
  * Return: Number of chars printed
  * **/
 int print_pointer(va_list types, char buffer[],
-	int flags, int width, int precission, int size)
+	int flags, int width, int precision, int size)
 {
 	char extra_c = 0, add = ' ';
 	int ind = BUFF_SIZE - 2, length = 2, padd_start = 1; /* length=2, for '0x' */
@@ -126,7 +126,7 @@ int print_reverse(va_list types, char buffer[],
 	for (i = 0, str[i], i++)
 		;
 
-	for (i = i - 1; i >=0; i--)
+	for (i = i - 1; i >= 0; i--)
 	{
 		char z = str[i];
 
@@ -147,14 +147,14 @@ int print_reverse(va_list types, char buffer[],
  * Return: Numbers of char printed
  * **/
 int print_rot13string(va_list types, char buffer[],
-	int flags, int width, int preciison, int size)
+	int flags, int width, int precision, int size)
 {
 	char x;
 	char *str;
 	unsigned int i, j;
 	int count = 0;
 	char in[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char out[] ="NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char out[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	str = va_arg(types, char *);
 	UNUSED(buffer);
@@ -185,5 +185,4 @@ int print_rot13string(va_list types, char buffer[],
 		}
 	}
 	return (count);
-}
-		
+}		

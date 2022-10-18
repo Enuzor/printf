@@ -76,7 +76,7 @@ int print_string(va_list types, char buffer[],
 }
 /**************************** PRINT PERCENT SIGN **************************/
 /**
- * print_percent  - Prints a percent sign
+ * print_percent - Prints a percent sign
  * @types: List of arguments
  * @buffer: Buffer  array to handle print
  * @flags: calculates active flags
@@ -99,8 +99,8 @@ int print_percent(va_list types, char buffer[],
 
 /************************************ PRINT INT ***********************/
 /**
- * print_int _ Print int
- * @types: Lista of arguments
+ * print_int - Print int
+ * @types: List of arguments
  * @buffer: BUffer array to handle print
  * @flags: Calculates active flags
  * @width: get width
@@ -186,6 +186,3 @@ int print_binary(va_list types, char buffer[],
 	}
 	return (count);
 }
-
-
-

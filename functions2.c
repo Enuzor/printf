@@ -55,9 +55,9 @@ int print_pointer(va_list types, char buffer[],
 /******************************* PRINT NON PRINTABLE *********************/
 /**
  * print_non_printable - Prints ascii codes in hexa of non printable chars
- * @types: Lista of arguments
+ * @types: List of arguments
  * @buffer: Buffer array to handle print
- * @flads: Calculates active flags
+ * @flags: Calculates active flags
  * @width: get width
  * @precision: Precision Specification
  * @size: Size specifier
@@ -185,4 +185,4 @@ int print_rot13string(va_list types, char buffer[],
 		}
 	}
 	return (count);
-}		
+}
